@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/dark"
+    android:foregroundTint="#0031333E"
+    android:orientation="vertical"
+    tools:context=".player">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="PLAYING FROM "
+            android:textColor="@color/mywh"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="105dp"
+            android:layout_height="29dp"
+            android:layout_marginBottom="68dp"
+            android:gravity="center"
+            android:text="LIBRARY"
+            android:textColor="@color/mywh"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView22"
+        style="@style/deafult"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+android:paddingTop="90dp"
+
+        android:tintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/titletext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="#00FFFFFF"
+        tools:srcCompat="@drawable/music" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:ellipsize="marquee"
+            android:paddingLeft="33dp"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textColor="@color/mywh"
+            android:textColorHint="#FFFCFC"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toTopOf="@+id/seekBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+
+            android:layout_gravity="center"
+            android:background="@color/dark"
+            android:backgroundTint="@color/dark"
+            android:foregroundTint="@color/myblue"
+            android:indeterminateTint="@color/myblue"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:progressBackgroundTint="#FFFFFF"
+            android:progressTint="@color/mywh"
+            android:thumbTint="@color/myblue"
+            app:layout_constraintBottom_toTopOf="@+id/play"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/ont"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="16dp"
+                android:text="TextView"
+                android:textColor="@color/mywh" />
+
+            <TextView
+                android:id="@+id/totalt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingEnd="35dp"
+                android:text="TextView"
+                android:textColor="@color/mywh" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <ImageButton
+                android:id="@+id/prev"
+                android:layout_width="1dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="#00121212"
+                android:paddingStart="50dp"
+                android:paddingTop="5dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/prev"
+                app:tint="@color/myblue" />
+
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="1dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="#00121212"
+                android:paddingTop="5dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pause"
+                app:tint="@color/myblue" />
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="1dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+
+                android:background="#00121212"
+                android:paddingTop="3dp"
+                android:paddingRight="50dp"
+                android:scaleType="centerInside"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                app:srcCompat="@drawable/next"
+                app:tint="@color/myblue" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
